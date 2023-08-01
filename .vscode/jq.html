@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="box-1">
+    <h1>RAYAN</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorum perspiciatis, aspernatur facilis porro necessitatibus harum consectetur voluptate maxime. Possimus exercitationem dignissimos aliquid nesciunt praesentium dicta minus nam voluptatum ducimus?</p></div>
+    <button id="btn-1">click here</button>
+
+
+    <div class="box-2">
+        <h1>RAYAN</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorum perspiciatis, aspernatur facilis porro necessitatibus harum consectetur voluptate maxime. Possimus exercitationem dignissimos aliquid nesciunt praesentium dicta minus nam voluptatum ducimus?</p></div>
+        <button id="btn-2">click here</button>
+
+
+ <div class="box-3">
+        <h1>RAYAN</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorum perspiciatis, aspernatur facilis porro necessitatibus harum consectetur voluptate maxime. Possimus exercitationem dignissimos aliquid nesciunt praesentium dicta minus nam voluptatum ducimus?</p></div>
+        <button id="btn-3">click here</button>
+
+        <script>
+        $(document).ready(function(){
+            $("#btn-1").click(function(){
+
+                $(".box-1").fadeToggle
+                (1500)
+            })
+            
+            $("#btn-2").click(function(){
+
+$(".box-2").slideToggle
+(1500)
+})
+
+
+$("#btn-3").click(function(){
+
+$(".box-3").animate(
+    {
+        width:"400px "
+
+
+
+    }
+)
+})
+
+
+        } )
+
+       
+        </script>
+</body>
+</html>

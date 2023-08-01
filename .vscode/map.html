@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <iframe id="map"src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14472.37819861118!2d67.03455595!3d24.92884875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1684559427565!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+        <h3 id="co1"></h3>
+        <h3 id="co2"></h3>
+        <button id="btn">get location</button>
+    </div>
+    <script>
+    let showposition=function(pos){
+        let lat= pos.coords.latitude
+        let long= pos.coords.longitude
+
+        let a=document.getElementById("co1")
+        a.innerText="latitude :"+lat
+
+        let b=document.getElementById("co2")
+        b.innerText="longitude :"+long
+
+        let maplink="https://www.google.com/maps?q="+lat+","+long+"&output=embed";
+        let map = document.getElementById("map");
+        map.setAttribute("src", maplink)
+    }
+
+    document.getElementById("btn").onclick=function(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition
+            (showposition);
+        }
+        else{
+            console.log("your browser doesn't support this api")
+
+        }
+    }
+</script>
+</body>
+</html>

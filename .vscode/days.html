@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <ul  class="days">
+        <li class="sunday">sunday</li>
+        <li class="monday">monday</li>
+        <li class="tuesday">tuesday</li>
+        <li class="wednesday">wednesday</li>
+        <li class="thursday">thursday</li>
+        <li class="friday">friday</li>
+        <li class="saturday ">saturday</li>
+    </ul></div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+
+        $(".days").children(":nth-child(1)").css({backgroundColor:"pink"})
+        $(".days").children(":nth-child(2)").css({backgroundColor:"orange"})
+        $(".days").children(":nth-child(3)").css({backgroundColor:"purple"})
+        $(".days").children(":nth-child(4)").css({backgroundColor:"orange"})
+        $(".days").children(":nth-child(5)").css({backgroundColor:"green"})
+        $(".days").children(":nth-child(6)").css({backgroundColor:"orange"})
+        $(".days").children(":nth-child(7)").css({backgroundColor:"yellow"})
+    })
+    
+    
+     
+    </script>
+</body>
+</html>

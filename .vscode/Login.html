@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="">
+                <input type="email" id="email" placeholder="enter your email">
+                <input type="password" id="pass" placeholder="enter your password">
+                <input type="submit" value= "login" onclick="login()">
+
+
+            </form>
+        </section>
+    </main>
+    
+</body>
+<script>
+function login(){
+    let email=document.getElementById("email").value;
+    let password=document.getElementById("pass").value;
+
+    let rmail=localStorage.getItem("email").value;
+    let rpass=localStorage.getItem("pass").value;
+
+if(email===rmail && password===rpass){
+alert("welcome"+localstorage.getItem ("username"))
+}
+else{
+    alert("in valid")
+}}
+
+
+
+
+
+
+
+</script>
+</html>

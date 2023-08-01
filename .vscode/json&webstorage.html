@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>json</title>
+    
+    0<script>
+function introduction(){
+let username=document.getElementById("uname").value
+let email=document.getElementById("email").value
+let password=document.getElementById("pass").value
+
+let id={
+
+name:username,
+email:email,
+pass:password,
+
+}
+alert(id.name)
+let intro=JSON.stringify(id);
+localStorage.setItem("user",intro)
+}
+</script>
+</head>
+
+<body>
+            <form action="">
+                <h1>sign up</h1>
+                <input type="text" id="uname" placeholder="enter your name"><br>
+                <input type="text" id="email" placeholder="enter your email"><br>
+                <input type="text" id="pass" placeholder="enter your password "><br>
+                <input type="submit"value="sign" onclick="introduction()">
+
+            </form>
+          
+</body>
+</html>
